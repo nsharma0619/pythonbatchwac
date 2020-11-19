@@ -1,1 +1,6 @@
-print("hello janvi and saloni")
+import mypackage.msg
+
+mypackage.msg.sendmsg()
+
+
+hangman game
