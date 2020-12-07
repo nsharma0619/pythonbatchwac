@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Welcome, {{user_name}}</h1>
+    <h3>hello, {{user_name}} you have a msg:</h3>
+    <h4>{{msg}}</h4>
+
+    {% if user_name == "saloni" %}
+    <h1>your friends:</h1>
+    <ol>
+    {% for i in friends_list %}
+        <li>{{i}}</li>
+    {% endfor %}
+    </ol>
+    {% else %}
+
+    <h1>sorry you dont have any friend.</h1>
+
+    {% endif %}
+</body>
+</html>
